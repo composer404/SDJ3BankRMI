@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.BankClient.UI.Controllers.CustomerViewController">
+   <children>
+      <TextField fx:id="amountTextField" layoutX="226.0" layoutY="92.0" />
+      <Label layoutX="226.0" layoutY="75.0" text="Amount" />
+      <Button layoutX="307.0" layoutY="126.0" mnemonicParsing="false" onAction="#onWithdrawAction" text="Widtdraw" />
+      <Button layoutX="179.0" layoutY="220.0" mnemonicParsing="false" onAction="#onLogoutAction" text="Logout" />
+      <Label fx:id="warningLabel" layoutX="226.0" layoutY="165.0" text="Not enough money" textFill="RED" />
+   </children>
+</AnchorPane>
