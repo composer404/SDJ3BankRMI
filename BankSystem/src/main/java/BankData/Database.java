@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public abstract class Database
 {
-  // DATABASE INITIALIZATION CODE
+  // Database initialization code
   /*
   CREATE DATABASE bankrmi;
   CREATE TABLE user_account (
