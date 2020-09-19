@@ -8,7 +8,7 @@ public class User implements Serializable {
     private UserTypes type;
     private double balance;
 
-    public User(String username,String password, UserTypes type, int balance)
+    public User(String username,String password, UserTypes type, double balance)
     {
         this.username = username;
         this.password = password;

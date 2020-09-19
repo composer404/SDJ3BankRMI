@@ -1,5 +1,6 @@
 package main.java.BankServer.Network;
 
+import main.java.BankData.BankDataDAOImpl;
 import main.java.BankServer.BusinessLogic.Operations;
 import main.java.TransferedObjects.User;
 import java.rmi.RemoteException;
@@ -11,7 +12,7 @@ public class BankServerImplementation implements BankServer{
 
     public BankServerImplementation() throws RemoteException {
         UnicastRemoteObject.exportObject(this, 0);
-        dataManager = new Operations();
+        dataManager = new Operations(new BankDataDAOImpl());
     }
 
     @Override
